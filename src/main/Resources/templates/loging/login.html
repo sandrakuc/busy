@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="index :: busyHead">
+</head>
+<body>
+<th:block th:if="${session.user == null}">
+    <nav th:replace="naviTemp1 :: naviUnlogged"></nav>
+</th:block>
+
+<th:block th:if="${session.user != null}">
+    <nav th:replace="naviTemp2 :: naviLogged"></nav>
+</th:block>
+
+<center>
+<div id="main_containter" class="container">
+    <div class="alert alert-light" role="alert">
+        <form method="post" action="login">
+            <h3>Zaloguj się!</h3>
+            <div class="form-horizontal">
+                <label for="inputLogin">Login</label>
+                <input type="text" class="form-control login" id="inputLogin" aria-describedby="loginHelp" name="login" placeholder="Wpisz login" size="60">
+            </div><br>
+            <div class="form-horizontal">
+                <label for="inputPassword">Hasło</label>
+                <input type="password" class="form-control login" id="inputPassword" name="pass" placeholder="Wpisz hasło" size="60">
+            </div><br>
+            <button type="submit" class="btn btn-primary" style="margin-left: 15px;">Zaloguj</button><br><br>
+        </form>
+        <a href="registration" class="taki-sobie-link">Nie masz jeszcze konta? Zarejestruj się!</a>
+    </div>
+</div>
+</center>
+
+
+<footer th:replace="index :: footer"></footer>
+
+</body>
+</html>

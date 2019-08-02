@@ -1,0 +1,162 @@
+a{
+    text-decoration: none;
+    color: rgb(195,195,195);
+}
+
+.taki-sobie-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(195,195,195);
+}
+
+.taki-sobie-link:active{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(195,195,195);
+}
+
+.taki-sobie-link:visited{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(195,195,195);
+}
+
+.taki-sobie-link:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: crimson;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(195,195,195);
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+body{
+    font-size: 18px;
+}
+
+.navbar.navbar-inverse{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    color: white;
+    background-color: rgb(195,195,195);
+    border-color: rgb(195,195,195);
+}
+
+#main_containter{
+    margin-top: 120px;
+    margin-bottom: 70px;
+}
+
+.container{
+    margin-bottom: 0;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: crimson;
+    color: whitesmoke;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: none;
+    color: crimson;
+}
+
+.header-link{
+    background-image: url("logo.png");
+    width: 284px;
+    height: 69px;
+    display: block;
+}
+
+.header-link:hover{
+    opacity: 0.8;
+}
+
+.nav.navbar-nav{
+    color: white;
+    padding-top: 7px;
+}
+
+a.nav.navbar-nav{
+    color: white;
+}
+
+#message {
+    position: fixed;
+    top: 96px;
+    right: 0;
+    width: 25%;
+}
+
+#inner-message {
+    margin: 0 auto;
+}
+
+#register_basic_data{
+    border: 2px black solid;
+}
+
+.sk a{
+color: white;
+}
+
+.sk a:hover{
+color: black;
+}
+
+.collapse.navbar-collapse {
+    color: white;
+    padding: 0px;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color: white;
+    margin: 15px;
+}
+
+.navbar-nav > li {
+    float: right;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: crimson;
+}
+
+.form-control.login{
+    width: 300px;
+    margin: 0;
+}
+
+.btn-primary{
+    font-weight: bold;
+    color: white;
+    background-color: crimson;
+    border-color: indianred;
+}
+
+.btn-primary:hover{
+    font-weight: bold;
+    color: white;
+    background-color: rgb(195,195,195);
+    border-color: slategray;
+}
+
+.collapse.navbar-collapse{
+    width: 1600px;
+}

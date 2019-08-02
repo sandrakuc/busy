@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="busyHead">
+    <meta charset="UTF-8">
+    <title>MalucBus</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" type="text/css"
+          href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<th:block th:if="${session.user == null}">
+    <nav th:replace="naviTemp1 :: naviUnlogged"></nav>
+</th:block>
+
+<th:block th:if="${session.user != null}">
+    <nav th:replace="naviTemp2 :: naviLogged"></nav>
+</th:block>
+
+
+<div id="main_containter" class="container">
+
+    <div class="alert alert-light" role="alert">
+        <h2 class="alert-heading">Witaj w systemie firmy MalucBus Sp. Z O. O.!</h2>
+        <div class="col-lg-6">
+        <p>Z nami pojedziesz na koniec świata i jeszcze dalej! Zapewnimy Ci komfortową podróż!</p>
+        <hr>
+        <p class="mb-0">Wystarczy jedno kliknięcie aby zarezerwować podróż naszym busem!</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="bus.jpg" class="img-rounded" alt="Bus" width="640" height="516">
+        </div>
+    </div>
+</div>
+
+<footer class="footer" th:fragment="footer">
+    <div class="container text-light">
+        <p>MalucBus Sp. Z O. O.<br>All rights reserved</p>
+    </div>
+    <script type="text/javascript" src="/webjars/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</footer>
+</body>
+</html>
